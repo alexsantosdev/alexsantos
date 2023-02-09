@@ -141,13 +141,19 @@ export const Container = styled.div`
         max-width: 100vw;
 
         .links {
+            flex-direction: column;
+
             width: 100%;
-            gap: 0;
+            gap: 12px;
 
             justify-content: space-between;
 
             a {
-                width: max-content;
+                width: 100%;
+                text-align: center;
+
+                align-items: center;
+                justify-content: center;
             }
         }
     }
