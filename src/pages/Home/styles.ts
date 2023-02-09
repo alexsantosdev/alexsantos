@@ -28,6 +28,7 @@ export const Container = styled.div`
     }
 
     .links {
+        width: 100%;
         display: flex;
         flex-direction: row;
 
@@ -130,5 +131,24 @@ export const Container = styled.div`
         text-decoration: underline;
 
         color: #979797;
+    }
+
+    @media (max-width: 700px) {
+        padding: 32px;
+
+        width: 100%;
+
+        max-width: 100vw;
+
+        .links {
+            width: 100%;
+            gap: 0;
+
+            justify-content: space-between;
+
+            a {
+                width: max-content;
+            }
+        }
     }
 `
